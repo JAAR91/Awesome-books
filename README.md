@@ -1,20 +1,14 @@
-# JS Restaurant Page
+# Awesome Books
 
-In this project, we built a simple restaurant project and made use of the following:
-
-- DOM Manipulation with JavaScript
-- Webpack
-- Use of JavaScript functions and loops
-
-## Live Server
-[Click Here](https://jaar91.github.io/RESTAURANT-PAGE/)
+Simple web app to keep a list of your books.
 
 ## Built With
 
 - HTML
 - CSS3
 - JavaScript
-- BootStrap
+
+####[Live Server](https://jaar91.github.io/Awesome-books/index.html )
 
 ## Getting Started
 
@@ -22,19 +16,17 @@ To get a local copy of the repository please run the following commands on your 
 
 ```bash
 $ cd <folder>
-$ git clone git@github.com:JAAR91/RESTAURANT-PAGE.git
-$ cd RESTAURANT-PAGE
+$ git clone https://github.com/JAAR91/Awesome-books.git
+$ cd Awesome-books
 ```
 
-Now set up webpack using the command:
-```
-$ npm install
-```
+In order to run the project, you need to have a local server running. A way to do this is
+by using vscode with the live server extension installed, then run
 
-To run the project just type the command:
+```bash
+$ code .
 ```
-$ npm start
-```
+From vscode open index.html, run the live server, and open `http://127.0.0.1:5500/index.html` from a web browser.
 
 ## Author
 
@@ -44,12 +36,17 @@ $ npm start
 - Twitter: [@91_jaar](https://twitter.com/91_jaar )
 - LinkedIn: [Jose Arriaga](https://www.linkedin.com/in/jaar/)
 
+👤 **Lucas Ferrari Soto**
+
+- GitHub: [@notlfish](https://github.com/notlfish)
+- Twitter: [@LucasFerrariSo1](https://twitter.com/LucasFerrariSo1)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/lucas-mauricio-ferrari-soto-472a3515a/)
 
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/JAAR91/js-library/issues).
+Feel free to check the [issues page](https://github.com/JAAR91/Awesome-books/issues).
 
 ## Show your support
 
@@ -59,7 +56,7 @@ Give a ⭐️ if you like this project!
 
 MIT License
 
-Copyright (c) 2021 Mih Julius Ndim and Jose Alberto Arriaga Ramos
+Copyright (c) 2021 Jose Alberto Arriaga Ramos
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
