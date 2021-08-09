@@ -4,15 +4,12 @@ import myLibrary from './constructor.js';
 const loadBooks = () => {
     container.innerHTML = ``;
 
-    myLibrary.list.forEach((book) => {
+    myLibrary.list.forEach((book, index) => {
         let removeButton = document.createElement("button");
         let innerDiv = document.createElement("div");
 
         removeButton.addEventListener('click', (event) => {
-            let newList = myLibrary.list.filter((item) => {
-                return !(item.title === book.title && item.author === book.author)
-            });
-            myLibrary.list = newList;
+            myLibrary.list.splice(index, 1);
             loadBooks();
         });
         removeButton.textContent = 'Remove';
