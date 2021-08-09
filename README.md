@@ -8,7 +8,7 @@ Simple web app to keep a list of your books.
 - CSS3
 - JavaScript
 
-####[Live Server](https://jaar91.github.io/Awesome-books/index.html )
+#### [Live Server](https://jaar91.github.io/Awesome-books/index.html )
 
 ## Getting Started
 
