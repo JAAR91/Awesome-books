@@ -9,6 +9,7 @@ const loadBooks = () => {
   myLibrary.list.forEach((book, index) => {
     const removeButton = document.createElement('button');
     const innerDiv = document.createElement('div');
+    innerDiv.classList.add('innerDiv');
 
     removeButton.addEventListener('click', (event) => {
       myLibrary.list.splice(index, 1);
