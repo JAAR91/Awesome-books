@@ -1,39 +1,21 @@
-import container, { newBookTitle, newBookAuthor, newBookButton } from './domloader.js';
+import { newBookTitle, newBookAuthor, newBookButton } from './domloader.js';
 import myLibrary from './constructor.js';
 
-myLibrary.load();
+myLibrary.render();
 
-const loadBooks = () => {
-  container.innerHTML = '';
-
-  myLibrary.list.forEach((book, index) => {
-    const removeButton = document.createElement('button');
-    const innerDiv = document.createElement('div');
-    innerDiv.classList.add('innerDiv');
-
-    removeButton.addEventListener('click', (event) => {
-      myLibrary.list.splice(index, 1);
-      loadBooks();
-      event.preventDefault();
-    });
-
-    removeButton.textContent = 'Remove';
-
-    innerDiv.innerHTML += `
-            <p>Title: ${book.title} </p>
-            <p>Author: ${book.author} </p>`;
-    innerDiv.appendChild(removeButton);
-    container.appendChild(innerDiv);
-  });
-  myLibrary.save();
-};
-
-newBookButton.addEventListener('click', (event) => {
-  myLibrary.new(newBookTitle.value, newBookAuthor.value);
+newBookButton.addEventListener('click', () => {
+  myLibrary.addBook(newBookTitle.value, newBookAuthor.value);
   newBookTitle.value = '';
   newBookAuthor.value = '';
-  loadBooks();
-  event.preventDefault();
 });
 
-loadBooks();
+const buttonDisabled = () => {
+  if (newBookTitle.value !== '' && newBookAuthor.value !== '') {
+    newBookButton.disabled = false;
+  } else {
+    newBookButton.disabled = true;
+  }
+};
+
+newBookTitle.addEventListener('input', buttonDisabled);
+newBookAuthor.addEventListener('input', buttonDisabled);
