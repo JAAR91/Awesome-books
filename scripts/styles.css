@@ -1,6 +1,7 @@
-.innerDiv {
+.bookEntry {
   border-bottom: 1px solid grey;
   padding: 5px;
+  list-style: none;
 }
 
 .addForm {
