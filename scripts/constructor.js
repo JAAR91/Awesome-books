@@ -1,22 +1,28 @@
-function Book(title, author) {
-  this.title = title;
-  this.author = author;
+class Book {
+  constructor(title, author) {
+    this.title = title;
+    this.author = author;
+  }
 }
 
-function Library() {
-  this.list = [];
-  this.load = () => {
-    this.list = JSON.parse(localStorage.getItem('AwesomeBooks'));
-    if (this.list === null) {
-      this.list = [];
-    }
+class Library {
+  constructor() {
+    this.list = JSON.parse(localStorage.getItem('AwesomeBooks')) || [];
   };
-  this.save = () => {
+
+  save() {
     localStorage.setItem('AwesomeBooks', JSON.stringify(this.list));
   };
-  this.new = (title, author) => {
+
+  addBook(title, author) {
     this.list.push(new Book(title, author));
+    this.save();
   };
+
+  deleteBook(index) {
+    this.list.splice(index, 1);
+    this.save();
+  }
 }
 
 const myLibrary = new Library();

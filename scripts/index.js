@@ -12,9 +12,9 @@ const loadBooks = () => {
     innerDiv.classList.add('innerDiv');
 
     removeButton.addEventListener('click', (event) => {
-      myLibrary.list.splice(index, 1);
-      loadBooks();
       event.preventDefault();
+      myLibrary.removeBook(index);
+      loadBooks();
     });
 
     removeButton.textContent = 'Remove';
@@ -29,7 +29,7 @@ const loadBooks = () => {
 };
 
 newBookButton.addEventListener('click', (event) => {
-  myLibrary.new(newBookTitle.value, newBookAuthor.value);
+  myLibrary.addBook(newBookTitle.value, newBookAuthor.value);
   newBookTitle.value = '';
   newBookAuthor.value = '';
   loadBooks();
