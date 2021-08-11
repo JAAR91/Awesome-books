@@ -39,7 +39,6 @@ class Library {
       bookEntry.innerHTML = book.print;
       const removeButton = document.createElement('button');
       removeButton.textContent = 'Delete';
-      removeButton.classList.add('book-entry-remove');
       removeButton.addEventListener('click', (event) => {
         this.deleteBook(index);
         event.preventDefault();
