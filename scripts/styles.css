@@ -1,7 +1,39 @@
+body {
+  max-width: 800px;
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+ul {
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+.books-list {
+  border: 1px solid black;
+}
+
+.books-list li:nth-child(odd) {
+  background: #ddd;
+}
+
+.book-entry-remove {
+  border: 1px solid black;
+  margin: 5px;
+  box-shadow: 2px 2px 0 2px black;
+}
+
 .bookEntry {
-  border-bottom: 1px solid grey;
   padding: 5px;
   list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .addForm {

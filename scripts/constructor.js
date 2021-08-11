@@ -3,8 +3,8 @@ import container from './domloader.js';
 function Book(title, author) {
   this.title = title;
   this.author = author;
-  this.print = `<p>Title: ${this.title} </p>
-    <p>Author: ${this.author} </p>`;
+  this.print = `<div><span>"${this.title}" </span> by
+    <span>${this.author} </span></div>`;
 }
 
 class Library {
@@ -31,12 +31,15 @@ class Library {
   render() {
     container.innerHTML = '';
     const booksContainer = document.createElement('ul');
+    booksContainer.classList.add('books-list');
+
     this.list.forEach((book, index) => {
       const bookEntry = document.createElement('li');
       bookEntry.classList.add('bookEntry');
       bookEntry.innerHTML = book.print;
       const removeButton = document.createElement('button');
-      removeButton.textContent = 'delete';
+      removeButton.textContent = 'Delete';
+      removeButton.classList.add('book-entry-remove');
       removeButton.addEventListener('click', (event) => {
         this.deleteBook(index);
         event.preventDefault();
