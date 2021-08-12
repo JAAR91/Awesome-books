@@ -4,7 +4,7 @@ body {
 
 main {
   max-width: 800px;
-  margin: 55px auto;
+  margin: 65px auto;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 18px;
@@ -67,6 +67,7 @@ input {
   font-size: 18px;
   line-height: 25px;
   padding-left: 6px;
+  margin: 8px 0;
 }
 
 input:-webkit-autofill,
@@ -81,7 +82,7 @@ input:-webkit-autofill:active {
 }
 
 h2 {
-  border-top: 2px solid black;
+
   padding-top: 20px;
 }
 
@@ -93,7 +94,7 @@ h2 {
   box-sizing: border-box;
   margin: 0;
   padding: 0 20px;
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid black;
   display: flex;
   justify-content: space-between;
   background-color: white;
@@ -115,4 +116,8 @@ h2 {
 footer {
   padding-left: 30px;
   border-top: 1px solid black;
+}
+
+.contact-info li {
+  margin-left: 40px;
 }
