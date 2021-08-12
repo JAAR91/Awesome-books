@@ -11,4 +11,6 @@ export const awesomeBooksList = document.getElementById('awesome-books-list');
 export const bookInput = document.getElementById('book-input');
 export const contactInfoSection = document.getElementById('contact-info-section');
 
+export const DateTimeDisplay = document.getElementById('DateTime');
+
 export default container;
