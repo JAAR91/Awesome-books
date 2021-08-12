@@ -8,16 +8,52 @@
     <title>Awesome Books</title>
 </head>
 <body>
-    <h1>All awesome books</h1>
-    <div id="container">
+    <nav id="top-navigation">
+        <p>Awesome Books</p>
+        <ul class="nav-list">
+            <li id="list-btn">
+                <a class="link" href="#">List</a>
+            </li>
+            <li id="new-book-btn">
+                <a class="link" href="#">Add new</a>
+            </li>
+            <li id="contact-btn">
+                <a class="link" href="#">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <p id="DateTime"></p>
+    <main>
+    <section id="awesome-books-list">
+        <h1>All awesome books</h1>
+        <div id="container">
 
-    </div>
-    <form id="add-book" class="addForm">
-      <h2>Add a new book</h2>
-      <input type="text" id="new-title" name="title" placeholder="Title"/><br>
-      <input type="text" id="new-author" name="author" placeholder="Author"/><br>
-      <button id="submit-new-book" type="submit" disabled>Add Book</button>
-    </form>
+        </div>
+    </section>
+    <section id="book-input" class="d-none">
+        <form id="add-book" class="addForm">
+            <h2>Add a new book</h2>
+            <input type="text" id="new-title" name="title" placeholder="Title"/><br>
+            <input type="text" id="new-author" name="author" placeholder="Author"/><br>
+            <button id="submit-new-book" type="submit" disabled>Add Book</button>
+        </form>
+    </section>
+    <section id="contact-info-section" class="d-none">
+        <h2>Contact information</h2>
+        <p>
+            Do you have any questions or you just want to say "hello"? You can
+            reach out to us!
+        </p>
+        <ul class="contact-info">
+            <li>Our email: mail@mail.com</li>
+            <li>Our phone number: +57 2599 157465</li>
+            <li>Our address: Strasse Street 22, 84503 City Countryland</li>
+        </ul>
+    </section>
+    </main>
+    <footer>
+        <p>Copyright</p>
+    </footer>
     <script  type="module" src="./scripts/index.js"></script>
 </body>
 </html>

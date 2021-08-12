@@ -1,6 +1,10 @@
 body {
+  margin: 0;
+}
+
+main {
   max-width: 800px;
-  margin: auto;
+  margin: 105px auto 0 auto;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 18px;
@@ -12,6 +16,10 @@ ul {
 
 h1 {
   text-align: center;
+}
+
+.contact-info li {
+  margin-left: 40px;
 }
 
 .books-list {
@@ -63,6 +71,7 @@ input {
   font-size: 18px;
   line-height: 25px;
   padding-left: 6px;
+  margin: 8px 0;
 }
 
 input:-webkit-autofill,
@@ -77,6 +86,56 @@ input:-webkit-autofill:active {
 }
 
 h2 {
-  border-top: 2px solid black;
   padding-top: 20px;
+}
+
+#top-navigation {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0 20px;
+  border-bottom: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+}
+
+#new-book-btn {
+  display: block;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  padding: 0 15px;
+  margin: 0 15px;
+}
+
+footer {
+  padding-left: 30px;
+  border-top: 2px solid black;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.d-none {
+  display: none;
+}
+
+.link {
+  color: black;
+  text-decoration: none;
+}
+
+#DateTime {
+  position: absolute;
+  right: 20px;
+  top: 55px;
 }
