@@ -4,7 +4,7 @@ body {
 
 main {
   max-width: 800px;
-  margin: 65px auto;
+  margin: 65px auto 0 auto;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 18px;
@@ -115,9 +115,23 @@ h2 {
 
 footer {
   padding-left: 30px;
-  border-top: 1px solid black;
+  border-top: 2px solid black;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .contact-info li {
   margin-left: 40px;
+}
+
+.d-none {
+  display: none;
+}
+
+.link {
+  color: black;
+  text-decoration: none;
 }

@@ -11,9 +11,15 @@
     <navbar id="top-navigation">
         <p>Awesome Books</p>
         <ul class="nav-list">
-            <li id="list-btn">List</li>
-            <li id="new-book-btn">Add new</li>
-            <li id="contact-btn">Contact</li>
+            <li id="list-btn">
+                <a class="link" href="#">List</a>
+            </li>
+            <li id="new-book-btn">
+                <a class="link" href="#">Add new</a>
+            </li>
+            <li id="contact-btn">
+                <a class="link" href="#">Contact</a>
+            </li>
         </ul>
     </navbar>
     <main>
@@ -23,7 +29,7 @@
 
         </div>
     </section>
-    <section id="book-input">
+    <section id="book-input" class="d-none">
         <form id="add-book" class="addForm">
             <h2>Add a new book</h2>
             <input type="text" id="new-title" name="title" placeholder="Title"/><br>
@@ -31,7 +37,7 @@
             <button id="submit-new-book" type="submit" disabled>Add Book</button>
         </form>
     </section>
-    <section id="contact-info">
+    <section id="contact-info-section" class="d-none">
         <h2>Contact information</h2>
         <p>
             Do you have any questions or you just want to say "hello"? You can

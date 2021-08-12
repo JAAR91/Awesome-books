@@ -1,4 +1,5 @@
-import { newBookTitle, newBookAuthor, newBookButton } from './domloader.js';
+import { newBookTitle, newBookAuthor, newBookButton, listBtn,
+  newBookBtn, contactBtn, awesomeBooksList, bookInput, contactInfoSection } from './domloader.js';
 import myLibrary from './constructor.js';
 
 myLibrary.render();
@@ -19,3 +20,21 @@ const buttonDisabled = () => {
 
 newBookTitle.addEventListener('input', buttonDisabled);
 newBookAuthor.addEventListener('input', buttonDisabled);
+
+listBtn.addEventListener('click', ()=> {
+  awesomeBooksList.classList.remove('d-none');
+  bookInput.classList.add('d-none');
+  contactInfoSection.classList.add('d-none');
+});
+
+newBookBtn.addEventListener('click', ()=> {
+  awesomeBooksList.classList.add('d-none');
+  bookInput.classList.remove('d-none');
+  contactInfoSection.classList.add('d-none');
+});
+
+contactBtn.addEventListener('click', ()=> {
+  awesomeBooksList.classList.add('d-none');
+  bookInput.classList.add('d-none');
+  contactInfoSection.classList.remove('d-none');
+});
