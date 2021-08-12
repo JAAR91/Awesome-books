@@ -18,6 +18,10 @@ h1 {
   text-align: center;
 }
 
+.contact-info li {
+  margin-left: 40px;
+}
+
 .books-list {
   border: 2px solid black;
 }
@@ -82,11 +86,9 @@ input:-webkit-autofill:active {
 }
 
 h2 {
-
   padding-top: 20px;
 }
 
-/* CSS grid first try */
 #top-navigation {
   position: fixed;
   top: 0;
@@ -121,10 +123,6 @@ footer {
   bottom: 0;
   width: 100%;
   box-sizing: border-box;
-}
-
-.contact-info li {
-  margin-left: 40px;
 }
 
 .d-none {
