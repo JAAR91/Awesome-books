@@ -1,6 +1,10 @@
 body {
+  margin: 0;
+}
+
+main {
   max-width: 800px;
-  margin: auto;
+  margin: 55px auto;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 18px;
@@ -79,4 +83,36 @@ input:-webkit-autofill:active {
 h2 {
   border-top: 2px solid black;
   padding-top: 20px;
+}
+
+/* CSS grid first try */
+#top-navigation {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0 20px;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+}
+
+#new-book-btn {
+  display: block;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  padding: 0 15px;
+  margin: 0 15px;
+}
+
+footer {
+  padding-left: 30px;
+  border-top: 1px solid black;
 }
